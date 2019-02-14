@@ -1,0 +1,22 @@
+
+<section class="postContainer">
+    <!-- my thoughts header -->
+    <p class="MyThoughts">My thoughts</p>
+
+    <!-- NewThought Button -->
+    <section>
+        <button class="NewThought" ng-click="$ctrl.showForm();">New Thought</button>
+    </section>
+
+    <!-- where all the posts are displayed to -->
+    <div class="postBox">
+    <!-- this is where the posts will be displayed -->
+    <section class="postTest" ng-repeat="post in $ctrl.postLibrary track by $index">
+        <post library="post" remove-post="$ctrl.removePost($index)"></post>
+    </section>
+    </div>
+
+</section> <!--end of postContainer header-->
+
+<!-- this is where all your post form content is! -->
+<postform show-form="$ctrl.showForm();" form-toggle="$ctrl.formToggle" add-post="$ctrl.addPost(newPost);"></postform>

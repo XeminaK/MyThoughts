@@ -1,0 +1,10 @@
+    
+    <!-- this is the content that goes into the postLibrary Array -->
+    <div class="postContent">
+        <div class="pCont1">
+            <p>Title: {{$ctrl.library.title}}</p>
+            <p>Thought: {{$ctrl.library.thought}}</p>
+        </div>
+
+    <img  class="closeButton" src="close icon.png" ng-click="$ctrl.removePost({index: $index });">
+    </div>

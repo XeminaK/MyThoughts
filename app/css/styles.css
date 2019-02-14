@@ -1,0 +1,117 @@
+body {
+    background-color: #f3f1f7;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 95vh;
+    width: 100%;
+}
+
+/* wrapped my thoughts, new thought button, and postBox so they would align */
+.postContainer {
+    /* border: solid 1px red; */
+    width: 500px;
+}
+
+/* elements within the array */
+.postContent {
+    border-bottom: 3px solid #f3f1f7;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+/* title and thought div, so that the x button would go to the right */
+.pCont1 {
+    width: 90%;
+    margin-left: 10px;
+    font-family: 'Dosis', sans-serif;
+    margin-right: 15px;
+}
+
+.closeButton {
+    height: 25px;
+    width: 25px;
+}
+
+
+/* my thoughts headline title */
+.MyThoughts {
+    color: rgb(3, 169, 244);
+    font-size: 24px;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+/* new thought button */
+.NewThought {
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* box that contained all the posts within it */
+.postBox {
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* this is the format for your form */
+.thoughtForm {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #B1DDEA;
+    height: 400px;
+    width: 500px;
+    z-index: 500;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* this is the div for the title and the title input box */
+.titleInput {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* this is the div for the thought and the thought text area */
+.thoughtInput {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.addButton {
+    margin-top: 20px;
+    width: 85%;
+    margin-left: 40px;
+}
+
+/* title input textbox */
+#input1 {
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 3px;
+    height: 25px;
+}
+
+/* textarea input */
+#input2 {
+    width: 99%;
+    border: solid 1px black;
+    border-radius: 3px;
+    height: 150px;
+}
